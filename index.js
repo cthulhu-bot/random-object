@@ -1,5 +1,11 @@
-function sum(a, b) {
-  return a + b;
-}
+const objDepth = (obj) => {
+};
 
-module.exports = sum;
+const objWidth = (obj) => {
+    return Object.keys(obj).length;
+};
+
+module.exports = {
+    objDepth,
+    objWidth,
+};

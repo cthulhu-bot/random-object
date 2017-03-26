@@ -1,6 +1,10 @@
-import sum from '../index';
+import {objDepth, objWidth}  from '../index';
 
 
-test('foo', () => {
-  expect(sum(1, 2)).toBe(3);
+test('empty object should have a length of 0', () => {
+    expect(objDepth({})).toBe(0);
+});
+
+test('empty object should have a width of 0', () => {
+    expect(objWidth({})).toBe(0);
 });
