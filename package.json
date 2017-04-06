@@ -1,15 +1,21 @@
 {
   "name": "random-object",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Generates a js object of random depth and width for testing purposes",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "build": "babel src -d lib && node lib/core.js"
   },
-  "jest" : {
-    "transform": {"^.+\\.jsx?$": "babel-jest"},
-    "moduleFileExtensions": ["js", "json", "es6"]
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "es6"
+    ]
   },
   "keywords": [],
   "author": "",
