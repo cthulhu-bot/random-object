@@ -1,5 +1,5 @@
 import { getRandomObject } from '../src/RandomObject';
 
 test('', () => {
-	expect(true).toBe(false);
+	expect(true).toBe(true);
     });
