@@ -7,10 +7,15 @@
     "test": "jest",
     "build": "babel src -d lib && node lib/core.js"
   },
+  "jest" : {
+    "transform": {"^.+\\.jsx?$": "babel-jest"},
+    "moduleFileExtensions": ["js", "json", "es6"]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-jest": "^19.0.0",
     "jest": "^19.0.2"
   },
   "devDependencies": {
