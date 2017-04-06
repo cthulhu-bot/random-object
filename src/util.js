@@ -1,3 +1,4 @@
+// Depth: number of nested object in a given object
 const objDepth = (obj, acc = 0) => {
     // Filter object by keys containing child objects
     const objectValues = Object.keys(obj).filter(key => { return typeof obj[key] === 'object' })
@@ -15,11 +16,17 @@ const objDepth = (obj, acc = 0) => {
                        .reduce((a,b) => (Math.max(a,b)))
 };
 
+// Width: number of keys in a given object
 const objWidth = (obj) => {
     return Object.keys(obj).length;
+};
+
+const getRandom1To10 = () => {
+    return Math.floor(Math.random() * 10) + 1
 };
 
 module.exports = {
     objDepth,
     objWidth,
+    getRandom1To10,
 };

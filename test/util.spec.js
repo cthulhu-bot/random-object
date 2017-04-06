@@ -1,4 +1,4 @@
-import {objDepth, objWidth}  from '../src/core';
+import {objDepth, objWidth}  from '../src/util';
 
 test('empty object should have a width of 0', () => {
     expect(objWidth({})).toBe(0);
