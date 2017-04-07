@@ -25,15 +25,17 @@ const random1To10 = () => {
     return Math.floor(Math.random() * 10) + 1
 }
 
+const alphaNumerics = () => {
+    return ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','0','1','2','3','4','5','6','7','8','9']
+}
+
 const randomAlphaNumeric = (length = 5) => {
-    if (length < 0)
-	length = 0
     const ret = [];
     for (let i = 0; i < length; i++) {
-	ret.concat(Math.floor(Math.random() * 10))
-	console.log(i)
+	const rando = Math.floor(Math.random() * 36)
+	ret.push(alphaNumerics()[rando])
     }
-    return ret
+    return ret.join('')
 }
 
 module.exports = {
