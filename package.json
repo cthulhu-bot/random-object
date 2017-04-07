@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build": "babel src -d lib && node lib/core.js",
+    "build": "babel src -d lib && node lib/RandomObject.js",
     "prepublish": "npm run build",
     "flow": "flow"
   },
