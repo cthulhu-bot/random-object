@@ -1,12 +1,12 @@
 {
   "name": "random-object",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Generates a js object of random depth and width for testing purposes",
   "main": "lib/RandomObject.js",
   "homepage": "https://npmjs.com/package/random-object",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/cthulhu-bot/random-object"
+    "type": "git",
+    "url": "https://github.com/cthulhu-bot/random-object"
   },
   "scripts": {
     "test": "jest",
@@ -24,7 +24,12 @@
       "es6"
     ]
   },
-  "keywords": ["random-object", "random", "object", "generative testing"],
+  "keywords": [
+    "random-object",
+    "random",
+    "object",
+    "generative testing"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
