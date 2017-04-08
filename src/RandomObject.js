@@ -7,9 +7,9 @@ import {
 
 
 const randomObject = (width = random1To10(), depth = random1To10()) => {
-    let ret = {};
+    let ret = {}
     for (let i = 0; i < width; i++) {
-	ret[randomAlphaNumeric()] = randomAlphaNumeric()
+	ret[randomAlphaNumeric()] = depth === 0 ? randomAlphaNumeric() : randomObject(1, depth-1)
     }
     return ret
 }
