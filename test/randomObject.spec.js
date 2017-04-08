@@ -22,5 +22,7 @@ test('requesting an object with given depth works', () => {
 
 
 test('requesting an object with no params generates an object with random width and depth less that 10', () => {
-    expect(true).toBe(true)
+    const obj = randomObject()
+    expect(objWidth(obj)).toBeLessThanOrEqual(10)
+    expect(objDepth(obj)).toBeLessThanOrEqual(10)
 })
