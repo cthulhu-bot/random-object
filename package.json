@@ -1,6 +1,6 @@
 {
   "name": "random-object",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Generates a js object of random depth and width for testing purposes",
   "main": "src/RandomObject.js",
   "homepage": "https://npmjs.com/package/random-object",
