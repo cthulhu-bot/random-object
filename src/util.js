@@ -21,6 +21,10 @@ const objWidth = (obj) => {
     return Object.keys(obj).length
 }
 
+const randomMax = (max) => {
+    return Math.floor(Math.random() * max) + 1
+}
+
 const random1To10 = () => {
     return Math.floor(Math.random() * 10) + 1
 }
@@ -42,5 +46,6 @@ module.exports = {
     objDepth,
     objWidth,
     random1To10,
+    randomMax,
     randomAlphaNumeric,
 }
